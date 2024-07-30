@@ -1,0 +1,28 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+*{
+  font-family: "Prompt", sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+.hero-section{
+    background-image: url('img/JM-Hero-Img-D.jpg');
+    width: 100vw;
+    height: 800px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;;
+    justify-content: center;
+}
