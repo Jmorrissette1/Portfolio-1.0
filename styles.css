@@ -1,3 +1,9 @@
+:root{
+    --blue: #0A2846;
+    --red: #B82420;
+}
+
+
 
 *,
 *::before,
@@ -13,9 +19,18 @@ html,
 body {
   margin: 0;
   padding: 0;
+  
 }
 
+body{
+    background: linear-gradient(to right, var(--red), var(--red)); /* Start with a single color */
+    animation: gradientFill 6s forwards; /* Apply the fade-in and gradient fill animations */
+    
+}
 .nav-bar{
+
+    background-color: #000;
+    color: #fff;
     display: flex;
     flex-direction: row;
 }
@@ -38,21 +53,21 @@ body {
     background-image: url('img/JM-Hero-Img-D.jpg');
     background-size: cover;
     opacity: 0; /* Start with the background hidden */
-    animation: fadeIn 6s forwards; /* Apply the fade-in animation */
+    animation: fadeIn 8s forwards; /* Apply the fade-in animation */
     z-index: -1; /* Ensure the background is behind the content */
 }
 .hero-h1{
     margin-top: 13rem;
     color: #fff;
     font-size: 60px;
-    animation: colorChange 6s;
+    
 }
 
 .hero-h2{
     margin-top: -3rem;
     font-size: 30px;
     color: #fff;
-    animation: colorChange 6s;
+    
    
 }
 
@@ -70,4 +85,40 @@ body {
     80% {
     color: #fff;
    }
+}
+
+@keyframes gradientFill {
+    0% {
+        background: linear-gradient(to right, var(--red), var(--red)); /* Start with a single color */
+    }
+    100% {
+        background: linear-gradient(to right, var(--red), var(--blue)); /* End with the full gradient */
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+    .hero-section{
+        width: 100vw;
+        background-image: url('img/JM-Hero-Img-M.jpg');
+        height: 400px;
+    }
+
+    .hero-h1{
+        margin-top: 5rem;
+        color: #fff;
+        font-size: 30px;
+        animation: colorChange 6s;
+    }
+    
+    .hero-h2{
+        margin-top: -1rem;
+        font-size: 30px;
+        color: #fff;
+        animation: colorChange 6s;
+       
+    }
+
 }
