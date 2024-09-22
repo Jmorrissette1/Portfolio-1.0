@@ -6,7 +6,7 @@ const Nav = () => {
     <div className={styles["nav-bar"]}>
         <ul className={styles["nav-list"]}>
             <li><Image src="Logo-Img.svg" alt="JM logo" width={120} height={100} /></li>
-            <li className={styles["nav-item"]}><a href="#About">About</a></li>
+            <li className={styles["nav-item"]}><a href="#about">About</a></li>
             <li className={styles["nav-item"]}>Projects</li>
             <li className={styles["nav-item"]}>Contact</li>
             <li className={styles["nav-item"]}>
