@@ -4,6 +4,9 @@ const Projects = () => {
     return(
     <div>
         <h1>Projects</h1>
+        <div ClassName={styles["featured-project-card"]}>
+            Featured Project
+        </div>
     </div>
     )
   };

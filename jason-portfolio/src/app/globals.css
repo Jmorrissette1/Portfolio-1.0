@@ -1,5 +1,8 @@
 :root {
   --black: #000;
+  --white: #fff;
+  --primary-red: #F83634;
+  --primary-blue: #276DA0;
   --max-width: 1100px;
   --border-radius: 12px;
   --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
@@ -89,13 +92,8 @@ body {
 }
 
 body {
-  
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: var(--white);
+  background-color: var(--black)
 }
 
 a {
