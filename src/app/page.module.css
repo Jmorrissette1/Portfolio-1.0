@@ -1,0 +1,111 @@
+
+.nav-bar{
+  background-color: var(--black);
+  color: #fff;
+  padding: 25px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav-list li{
+  list-style-type: none;
+}
+.nav-item{
+  font-size: 24px;
+}
+
+.social-box{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+}
+
+.social-icon{
+  margin: 1rem;
+}
+
+.hero-section{
+  position: relative;
+  width: 100vw;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden; /* Ensure the pseudo-element doesn't overflow */
+}
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('img/JM-Hero-Img-D.jpg');
+  background-size: cover;
+  opacity: 0; /* Start with the background hidden */
+  animation: fadeIn 8s forwards; /* Apply the fade-in animation */
+  z-index: -1; /* Ensure the background is behind the content */
+}
+.hero-h1{
+  margin-top: 12rem;
+  color: #fff;
+  font-size: 60px;
+  
+}
+
+.hero-h3{
+  font-size: 30px;
+  color: #fff;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1; /* End with the section fully visible */
+  }
+}
+
+.about-section{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 25px;
+}
+
+.about-h1{
+  margin-top: 5rem;
+}
+
+@media (max-width: 600px) {
+  .hero-section{
+      background-position: center;
+      background-image: url('img/JM-Hero-Img-M.jpg');
+      height: 400px;
+     
+  }
+
+  .hero-h1{
+      margin-top: 5rem;
+      color: #fff;
+      font-size: 30px;
+      animation: colorChange 6s;
+  }
+  
+  .hero-h3{
+     
+      font-size: 28px;
+      color: #fff;
+      animation: colorChange 6s;
+     
+  }
+
+}
