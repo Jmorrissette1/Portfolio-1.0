@@ -1,5 +1,6 @@
 import styles from './page.module.css';
 import Image from "next/image";
+import Link from "next/link";
 
 const Nav = () => {
     return(
@@ -7,7 +8,7 @@ const Nav = () => {
         <ul className={styles["nav-list"]}>
             <li><Image src="Logo-Img.svg" alt="JM logo" width={120} height={100} /></li>
             <li className={styles["nav-item"]}><a href="#about">About</a></li>
-            <li className={styles["nav-item"]}>Projects</li>
+            <li className={styles["nav-item"]}><Link href="#projects">Projects</Link></li>
             <li className={styles["nav-item"]}>Contact</li>
             <li className={styles["nav-item"]}>
                 <ul className={styles["social-box"]}>
