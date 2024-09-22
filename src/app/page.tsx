@@ -13,7 +13,9 @@ export default function Home() {
    <main>
        <Nav />
        <Hero /> 
-       <About />
+       <section id="about">
+        <About />
+       </section>
        <Projects />
        <Contact />
        <Footer />
