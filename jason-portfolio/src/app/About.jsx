@@ -3,7 +3,9 @@ import Image from "next/image";
 
 const About = () => {
     return(
-    <h1>About Me</h1>
+      <div className={styles["about-section"]}>
+        <h1 className={styles["about-h1"]}>Your Vision, My Mission</h1>
+     </div>
     )
   };
   

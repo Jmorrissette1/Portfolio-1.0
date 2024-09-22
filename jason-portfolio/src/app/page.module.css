@@ -30,9 +30,9 @@
 }
 
 .social-icon{
-  
   margin: 1rem;
 }
+
 .hero-section{
   position: relative;
   width: 100vw;
@@ -65,8 +65,6 @@
 .hero-h3{
   font-size: 30px;
   color: #fff;
-  
- 
 }
 
 @keyframes fadeIn {
@@ -75,6 +73,17 @@
   }
 }
 
+.about-section{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 25px;
+}
+
+.about-h1{
+  margin-top: 5rem;
+}
 
 @media (max-width: 600px) {
   .hero-section{
