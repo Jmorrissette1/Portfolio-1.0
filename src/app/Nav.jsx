@@ -7,9 +7,9 @@ const Nav = () => {
     <div className={styles["nav-bar"]}>
         <ul className={styles["nav-list"]}>
             <li><Image src="Logo-Img.svg" alt="JM logo" width={120} height={100} /></li>
-            <li className={styles["nav-item"]}><a href="#about">About</a></li>
+            <li className={styles["nav-item"]}><Link href="#about">About</Link></li>
             <li className={styles["nav-item"]}><Link href="#projects">Projects</Link></li>
-            <li className={styles["nav-item"]}>Contact</li>
+            <li className={styles["nav-item"]}><Link href="#contact">Contact</Link></li>
             <li className={styles["nav-item"]}>
                 <ul className={styles["social-box"]}>
                     <li className={styles["social-icon"]}><a href="https://github.com/Jmorrissette1"><Image src="Git-Hub-Black.svg" alt="Github Logo" width={40} height={40}/></a></li>
