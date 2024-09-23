@@ -1,11 +1,12 @@
 import styles from './page.module.css';
+import Image from "next/image";
 
 const Projects = () => {
     return(
-    <div>
-        <h1>Projects</h1>
+    <div className="featured-project-section">
+        <h1>Featured Project</h1>
         <div ClassName={styles["featured-project-card"]}>
-            Featured Project
+           <Image src='/img/Klean-Freak-Img.png' alt ="project 1 image" width={1200} height={600}></Image> 
         </div>
     </div>
     )
