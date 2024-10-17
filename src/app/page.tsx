@@ -7,20 +7,19 @@ import Projects from "./Projects";
 import Contact from "./Contact";
 import Footer from "./Footer";
 
-
 export default function Home() {
   return (
-   <main>
-       <Nav />
-       <Hero /> 
-       <section id="about">
+    <main>
+      <Nav />
+      <Hero />
+      <section id="about">
         <About />
-       </section>
-       <section id="projects">
-       <Projects />
-       </section>
-       <Contact />
-       <Footer />
-   </main>
+      </section>
+      <section id="projects">
+        <Projects />
+      </section>
+      <Contact />
+      <Footer />
+    </main>
   );
 }
