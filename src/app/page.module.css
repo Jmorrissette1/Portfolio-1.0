@@ -1,5 +1,9 @@
+.row {
+  display: flex;
+  flex-direction: row;
+}
 
-.nav-bar{
+.nav-bar {
   background-color: var(--black);
   color: #fff;
   padding: 25px;
@@ -8,32 +12,32 @@
   z-index: 1000;
 }
 
-.nav-list{
+.nav-list {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
 }
 
-.nav-list li{
+.nav-list li {
   list-style-type: none;
 }
-.nav-item{
+.nav-item {
   font-size: 24px;
 }
 
-.social-box{
+.social-box {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   padding: 10px;
 }
 
-.social-icon{
+.social-icon {
   margin: 1rem;
 }
 
-.hero-section{
+.hero-section {
   position: relative;
   width: 100vw;
   height: 800px;
@@ -43,31 +47,30 @@
   overflow: hidden; /* Ensure the pseudo-element doesn't overflow */
 }
 .hero-section::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('img/JM-Hero-Img-D.jpg');
+  background-image: url("img/JM-Hero-Img-D.jpg");
   background-size: cover;
   opacity: 0; /* Start with the background hidden */
   animation: fadeIn 8s forwards; /* Apply the fade-in animation */
   z-index: -1; /* Ensure the background is behind the content */
 }
-.hero-h1{
+.hero-h1 {
   margin-top: 12rem;
   color: #fff;
   font-size: 60px;
-  
 }
 
-.hero-h3{
+.hero-h3 {
   font-size: 30px;
   color: #fff;
 }
 
-.featured-project-section{
+.featured-project-section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -80,7 +83,7 @@
   }
 }
 
-.about-section{
+.about-section {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -88,31 +91,42 @@
   padding: 25px;
 }
 
-.about-h1{
+.aboutH1 {
   margin-top: 5rem;
+  font-size: 2.5rem;
+  font-family: var(--daughter);
 }
 
+.blueLine {
+  margin-top: 1rem;
+  width: 68px;
+  border: 4px solid #276da0;
+}
+.aboutP {
+  max-width: 650px;
+  font-family: var(--daughter);
+  padding: 20px;
+}
+.aboutContent {
+  margin: 2rem 0;
+}
 @media (max-width: 600px) {
-  .hero-section{
-      background-position: center;
-      background-image: url('img/JM-Hero-Img-M.jpg');
-      height: 400px;
-     
+  .hero-section {
+    background-position: center;
+    background-image: url("img/JM-Hero-Img-M.jpg");
+    height: 400px;
   }
 
-  .hero-h1{
-      margin-top: 5rem;
-      color: #fff;
-      font-size: 30px;
-      animation: colorChange 6s;
-  }
-  
-  .hero-h3{
-     
-      font-size: 28px;
-      color: #fff;
-      animation: colorChange 6s;
-     
+  .hero-h1 {
+    margin-top: 5rem;
+    color: #fff;
+    font-size: 30px;
+    animation: colorChange 6s;
   }
 
+  .hero-h3 {
+    font-size: 28px;
+    color: #fff;
+    animation: colorChange 6s;
+  }
 }
