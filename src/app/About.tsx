@@ -8,13 +8,13 @@ const About = () => {
       <div className={styles.blueLine}></div>
       <div className={`${styles.row} ${styles.aboutContent}`}>
         <p className={styles.aboutP}>
-          Hi, I’m Jason Morrissette, a fun-loving, nerdy designer and full-stack
-          engineer. I specialize in crafting custom web solutions using HTML,
-          CSS, JavaScript, and Next.js. With a passion for blending creativity
-          and technical prowess, I transform my clients' visions into stunning
-          and functional digital experiences. From sleek websites to dynamic web
-          applications, I’m dedicated to delivering top-notch results that
-          exceed expectations.
+          Hi, I&apos;m Jason Morrissette, a fun-loving, nerdy designer and
+          full-stack engineer. I specialize in crafting custom web solutions
+          using HTML, CSS, JavaScript, and Next.js. With a passion for blending
+          creativity and technical prowess, I transform my clients&apos; visions
+          into stunning and functional digital experiences. From sleek websites
+          to dynamic web applications, I&apos;m dedicated to delivering
+          top-notch results that exceed expectations.
         </p>
         <Image
           src="/img/portfolio-photo-1.jpg"
