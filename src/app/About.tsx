@@ -17,7 +17,7 @@ const About = () => {
           top-notch results that exceed expectations.
         </p>
         <Image
-          src="/img/portfolio-photo-1.jpg"
+          src="/img/JmorrissettePhoto.jpg"
           alt="Jason Morrissette"
           width={500}
           height={375}
