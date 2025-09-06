@@ -7,6 +7,8 @@ import {
   faNodeJs,
   faReact,
   faGitAlt,
+  faPython,
+  faLinux,
 } from "@fortawesome/free-brands-svg-icons";
 import styles from "./SkillsSection.module.css";
 import Image from "next/image";
@@ -14,7 +16,7 @@ import Image from "next/image";
 const SkillsSection: React.FC = () => {
   return (
     <section className={styles.contentSection}>
-      <h2 className={styles.skillsH1}>Skills</h2>
+      <h2 className={styles.skillsH1}>Development Skills</h2>
       <div className={styles.blueLine}></div>
       <ul className={`${styles.row} ${styles.skillsList}`}>
         <li className={styles.skillsIcon}>
@@ -66,6 +68,25 @@ const SkillsSection: React.FC = () => {
           />
         </li>
       </ul>
+      <h2 className={styles.skillsH1}>Security Skills</h2>
+      <div className={styles.blueLine}></div>
+       <ul className={`${styles.row} ${styles.skillsList}`}>
+         <li className={styles.skillsIcon}>
+          <FontAwesomeIcon 
+          icon={faPython} 
+          style={{ color: "#ec322d" }} 
+          width={75} 
+          height={75} />
+         </li>
+         <li className={styles.skillsIcon}>
+          <FontAwesomeIcon
+            icon={faLinux}
+            style={{ color: "#ec322d" }}
+            width={75}
+            height={75}
+          />
+        </li>
+       </ul>
     </section>
   );
 };
