@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Inter, Architects_Daughter } from "next/font/google";
+import { Inter, Orbitron } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
-const Architects = Architects_Daughter({
+const inter = Inter({ subsets: ["latin"], weight: ["400", "700"], variable: "--inter-font" });
+const orbitron = Orbitron({
   subsets: ["latin"],
-  weight: "400",
-  variable: "--daughter",
+  weight: ["400", "700"],
+  variable: "--orbitron-font",
 });
 export const metadata: Metadata = {
   title: "Jason Morrissette || Software Engineer",
@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${Architects.variable}`}>
+      <body className={`${inter.className} ${orbitron.variable}`}>
         {children}
       </body>
     </html>

@@ -66,6 +66,7 @@
 .hero-h1 {
   color: #fff;
   font-size: 60px;
+  font-family: var(--orbitron-font);
 }
 
 .hero-h3 {
@@ -97,7 +98,7 @@
 .aboutH1 {
   margin-top: 5rem;
   font-size: 2.5rem;
-  font-family: var(--daughter);
+  font-family: var(--orbitron-font);
 }
 
 .blueLine {
@@ -108,7 +109,7 @@
 }
 .aboutP {
   max-width: 650px;
-  font-family: var(--daughter);
+  font-family: var(--inter-font);
   padding: 20px;
 }
 .aboutContent {
