@@ -1,12 +1,13 @@
 import styles from './page.module.css';
+import Image from "next/image";
 
-const Hero = () => {
+export default function Hero() {
     return(
     <div className={styles["hero-section"]}>
     <h1 className={styles["hero-h1"]}>Jason Morrissette</h1>
     <h3 className={styles["hero-h3"]}>Developer & Future Offensive Security Engineer</h3>
     </div>
+    
     )
   };
   
-  export default Hero;
